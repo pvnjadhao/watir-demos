@@ -1,3 +1,25 @@
+### Simple Ruby script
+
+```ruby
+require 'watir'
+
+browser = Watir::Browser.new
+browser.goto 'https://www.cryptextechnologies.com/'
+
+puts browser.title
+# => Ruby on Rails Development Company in India | Cryptex Technologies
+
+browser.close
+```
+
+Run the test
+
+```bash
+$ ruby sample_test.rb
+```
+
+***
+
 ### Integration with Mini-Test
 This is a simples usage of Watir and Minitest. You do not have to install anything, MiniTest is included in Ruby.
 
