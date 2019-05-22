@@ -61,5 +61,7 @@ and others.
 - Microsoft edge supports microsoft web-driver
 - Safari supports safari driver if you are on MAC there is no need to install driver for safari it is preinstalled.
 
+- So, How to install the driver for browsers in ubuntu. Its so simple just go to official site of browser and download the driver, but you need to carefull about browser verion.
 
-
+- There is directory in ubuntu **/usr/bin/** just copy the downloaded file in bin directory.
+***
