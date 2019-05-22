@@ -71,14 +71,14 @@ Watir is a user focused way to test your websites. It mostly uses Selenium for b
 
 The typical flow of information looks like this:
 
-Test Runner –> 
-      Test code –> 
-           PageObject code –> 
-                Watir library–> 
-                     Selenium library –> 
-                          Selenium Server(s) (optional) –> 
-                               Browser Driver –> 
-                                    Browser
+Test Runner –>   
+      Test code –>   
+           PageObject code –>   
+                Watir library–>   
+                     Selenium library –>   
+                          Selenium Server(s) (optional) –>   
+                               Browser Driver –>   
+                                    Browser  
 
 **Test Runner**. In Ruby this can be MiniTest, RSpec or Cucumber. Most Watir users use RSpec by default, but Cucumber is popular for teams that are working in a Behavior Driven Development environment.
 
