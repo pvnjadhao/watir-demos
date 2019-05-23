@@ -21,6 +21,7 @@ require 'watir-performance'
 end
 ```
 
+Summary Hash:
 
 ```ruby
 {
