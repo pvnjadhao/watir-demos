@@ -63,10 +63,10 @@ form_link.click
 
 ```ruby
 browser = Watir::Browser.start 'http://localhost:3000'
-d = browser.div class: 'col-md-12 custom-column'
-d.exists?
-d.text
-s = browser.span class: 'powered-by-text'
-s.exists?
-s.text
+test_div = browser.div class: 'col-md-12 custom-column'
+test_div.exists?
+test_div.text
+message = browser.span class: 'message'
+message.exists?
+message.text
 ```
