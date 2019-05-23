@@ -21,7 +21,14 @@ require 'watir-performance'
 end
 ```
 
-Summary Hash:
+List of available metrics :
+
+* ```:summary```
+* ```:navigation```
+* ```:memory```
+* ```:timing```
+
+Available metric options :
 
 ```ruby
 {
