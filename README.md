@@ -80,19 +80,19 @@ Test Runner –>
                                Browser Driver –>   
                                     Browser  
 
-**Test Runner**. In Ruby this can be MiniTest, RSpec or Cucumber. Most Watir users use RSpec by default, but Cucumber is popular for teams that are working in a Behavior Driven Development environment.
+**Test Runner**. In Ruby this can be MiniTest, RSpec or Cucumber. It is responsible for running test suite. Most developers uses RSpec by default.
 
-**Test Code**. Whether Cucumber Steps or RSpec “it” blocks, the code here should be focused on succinctly representing the business requirement for the test. This is the higher level “what” code that references other objects (like page objects) for the actual implementation. Ruby is more readable than most languages, so name page objects and methods well and a quick skim will allow to the purpose of the test to be easily understood.
+**Test Code**. If you are using Rspec then its an “it” blocks, the code here focused on representing the business requirement for the test.
 
-**Page Object**. This is where the implementation (“how”) code belongs. Page objects can represent an entire page, a modal, or a subset of a page (like a sidebar or a footer). Page objects are typically comprised of two things, the elements with their applicable locators, and the methods that represent the actions that a user can take on the page. Most of this code will be references to Watir objects.
+**Page Object**. Page objects represent an entire page which is rendered on browser, a modal, or a subset of a page like a sidebar or a footer. The page object is nothing but the collection of html elements with selectors like classes, ids and data-attributes.
 
-**Watir Code**. Watir is designed for “Test Automation.” It takes the code in a page object and translates it into the series of applicable Selenium and JavaScript calls to accomplish the desired functionality. Watir attempts to understand the intention of the code in a test suite and tries to follow a “Do What I Mean” philosophy to accomplish it. Continue reading through the documentation to see how Watir makes writing tests fun and easy.
+**Watir Code**. Watir takes the code in a page object and translates it into the series of Selenium and JavaScript calls to simulate the user behaviour.
 
-**Selenium Code**. Selenium is designed for “Browser Automation.” It takes the higher focuses on the specific low level actions that can be taken on a browser. It implements a small number of locators and takes a “Do What I Say” approach. It translates idiomatic Ruby code into serialized json blobs to send along for further processing.
+**Selenium Code**. Selenium is designed for “Browser Automation.” It takes the higher focuses on the specific low level actions that can be taken on a browser. It translates Ruby code into serialized json blobs to processing.
 
-**Selenium Server**. This isn’t necessary when driving browsers on the same computer as the code. To drive browsers on a remote computer, though, the commands need to be sent to one or more intermediary servers. The Selenium server can be set to act in a standalone mode, or can be set up as a grid with a server acting as a “hub” on one computer, and a server acting as a “node” on another computer.
+**Selenium Server**. This is not necessary when driving browsers on the same computer as the code. Selenium servers are useful when you want drive a browser on remote computer.
 
-**Browser Drivers**. Because of the progress on the W3C WebDriver Specification, each major browser vendor (Google, Microsoft, Apple, and Mozilla) has committed to implementing their own driver for their respective browser. The driver is an executable file that lives on the same machine as the browser that is being automated. Read the Drivers documentation to see how to download and store the driver so that Selenium can find and use it. The driver accepts the standardized information from Selenium code and translates it into code needed by the particular browser to take the action specified.
+**Browser Drivers**. The driver is an executable file that present on the same machine where the browser. It takes command from selenium code and sends to browser and browser will perform the actions. 
 
-**Browser**. The browser of your choice executes each command sent by the driver, and sends the results or errors back down this path to the test code.
+**Browser**. The browser of your choice executes each command sent by the driver, and sends the results or errors back to the test code.
 
