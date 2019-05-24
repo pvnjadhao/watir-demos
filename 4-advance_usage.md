@@ -83,3 +83,22 @@ Available metric options :
   }
 }
 ```
+***
+
+### Headless mode
+A headless browser is a web browser without a graphical user interface. Headless browsers provide automated control of a web page in an environment similar to popular web browsers, but are executed via a command-line interface or using network communication.
+
+```ruby
+require 'watir'
+
+browser = Watir::Browser.new(
+  :chrome,
+  {
+    :chromeOptions => {
+      :args => ['--headless', '--window-size=1200x600']
+      }
+    }
+  )
+browser.goto('https://www.cryptextechnologies.com/')
+browser.screenshot.save 'screenshot.png'
+```
