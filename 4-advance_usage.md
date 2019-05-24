@@ -102,3 +102,83 @@ browser = Watir::Browser.new(
 browser.goto('https://www.cryptextechnologies.com/')
 browser.screenshot.save 'screenshot.png'
 ```
+***
+
+### Special Keys
+
+To send special keys to an element or browser page, you use the #send_keys method.
+
+```ruby
+b.send_keys :enter
+```
+
+Use keys on elements
+
+```ruby
+b.element.send_keys [:control, 'a'], :backspace
+```
+
+List of keys available:
+
+```ruby
+:cancel
+:help
+:backspace
+:tab
+:clear
+:return
+:enter
+:shift
+:left_shift
+:control
+:left_control
+:alt
+:left_alt
+:pause
+:escape
+:space
+:page_up
+:page_down
+:end
+:home
+:left
+:arrow_left
+:up
+:arrow_up
+:right
+:arrow_right
+:down
+:arrow_down
+:insert
+:delete
+:semicolon
+:equals
+:numpad0
+:numpad1
+:numpad2
+:numpad3
+:numpad4
+:numpad5
+:numpad6
+:numpad7
+:numpad8
+:numpad9
+:multiply
+:add
+:separator
+:subtract
+:decimal
+:divide
+:f1
+:f2
+:f3
+:f4
+:f5
+:f6
+:f7
+:f8
+:f9
+:f10
+:f11
+:f12
+```
